@@ -23,35 +23,18 @@ The dataset was sourced from Kaggle and contains 12 original columns:
 * duration: The length of the content, measured in minutes for movies or number of seasons for TV shows.
 * listed_in: The genres or categories assigned to the title (e.g., Documentaries, International TV Shows, Comedies).
 
-Key Steps & Insights
+### Key Steps & Insights
 1. Data Cleaning
-
-Handling Missing Values: Replaced null values in director, cast, and country with "Unknown" to maintain data integrity without dropping rows.
-
-Date Standardization: Converted date_added from an object to a datetime format to allow for time-series analysis.
-
-Feature Engineering: Extracted the "Primary Country" from the country column to simplify geographic visualizations.
-
-Correction of Misaligned Data: Fixed an issue where some duration values (e.g., "74 min") were incorrectly placed in the rating column.
+* Handling Missing Values: Replaced null values in director, cast, and country with "Unknown" to maintain data integrity without dropping rows.
+* Date Standardization: Converted date_added from an object to a datetime format to allow for time-series analysis.
+* Feature Engineering: Extracted the "Primary Country" from the country column to simplify geographic visualizations.
+* Correction of Misaligned Data: Fixed an issue where some duration values (e.g., "74 min") were incorrectly placed in the rating column.
 
 2. Initial Observations
-
 Content Dominance: Netflix's library is heavily skewed toward Movies (6,100) compared to TV Shows (2,600).
-
 Freshness Factor: With a median release year of 2017, the platform prioritizes modern "hits" over a deep archive of historical classics.
 
-Tools Used
-Pandas: Data manipulation and cleaning.
-
-NumPy: Matrix and numerical operations.
-
-Matplotlib & Seaborn: Data visualization.
-
-How to Run
-Ensure you have the netflix_titles.csv dataset in your directory.
-
-Install the required libraries:
-
-Bash
-pip install pandas numpy matplotlib seaborn
-Open and run the NETFLIX PROJECT.ipynb notebook.
+### Tools Used
+* Pandas for Data manipulation and cleaning.
+* NumPy for Matrix and numerical operations.
+* Matplotlib & Seaborn for Data visualization.
